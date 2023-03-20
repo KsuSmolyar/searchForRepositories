@@ -33,15 +33,15 @@ form.addEventListener("submit", async (event) => {
 				language: repository.language ?? "-",
 			})
 		);
-		preLoader.classList.remove("show");
 		if (repositoriesElements.length === 0) {
 			repositoriesList.innerHTML = `<li class="notFound">Ничего не найдено...</li>`;
 		} else {
 			repositoriesList.append(...repositoriesElements);
 		}
 	} catch (err) {
-		preLoader.classList.remove("show");
 		repositoriesList.innerHTML = `<li class="error">Упс, что-то пошло не так...Попробуйте позже</li>`;
+	} finally {
+		preLoader.classList.remove("show");
 	}
 });
 
