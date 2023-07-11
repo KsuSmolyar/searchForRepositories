@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchForRepositories</title>
+    <link rel="shortcut icon" href="icon-search.png" type="image/png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <div class="container">
+        <section class="formContainer">
+          <form name="form" class="searchForm">
+            <div class="searchInputContainer">
+              <input
+                class="searchForm__input searchInput"
+                name="search"
+                type="text"
+                placeholder="Введите название репозитория"
+              />
+              <div class="errorContainer"></div>
+            </div>
+            <input
+              class="searchForm__input submitInput"
+              name="submit"
+              type="submit"
+              value="Поиск"
+            />
+          </form>
+        </section>
+        <section class="searchResults">
+          <div class="preloader">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+          </div>
+          <ul class="resultsList"></ul>
+        </section>
+      </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

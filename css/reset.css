@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #313030;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	color: #bdc1c6;
+}
+
+body {
+	margin: 0;
+	background-color: #202124;
+	height: 100vh;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: #8ab4f8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	font-size: 14px;
+}
+
+a:visited {
+	color: #c58af9;
+}
+
+input,
+textarea {
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

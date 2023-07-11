@@ -1,0 +1,179 @@
+/*Контейнер bodyWrapper начало*/
+.bodyWrapper {
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+/*Контейнер bodyWrapper конец*/
+
+/*Контейнер для формы и списка репозиториев начало*/
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	width: 100%;
+	padding: 20px 8px 10px 8px;
+	gap: 30px;
+}
+/*Контейнер для формы и списка репозиториев конец*/
+
+/*Форма начало*/
+.formContainer {
+	display: flex;
+	max-width: 800px;
+	width: 100%;
+}
+
+.searchForm {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.searchForm__input {
+	height: 32px;
+	border-radius: 7px;
+	border: none;
+	padding: 5px 13px;
+}
+
+.searchInputContainer {
+	position: relative;
+	width: 435px;
+}
+
+.searchInput {
+	max-width: 450px;
+	width: 100%;
+}
+
+.errorContainer {
+	position: absolute;
+	top: 38px;
+	left: 5px;
+	display: none;
+	max-width: 450px;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 500;
+	color: #cd4c4c;
+	font-style: italic;
+	padding: 10px 2px;
+}
+
+.submitInput {
+	font-size: 15px;
+}
+/*Форма конец*/
+
+/*Список репозиториев начало*/
+.searchResults {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.notFound {
+	position: absolute;
+	top: 95px;
+	left: 250px;
+	color: white;
+	font-size: 26px;
+}
+
+.error {
+	position: absolute;
+	top: 95px;
+	left: 167px;
+	color: #cd4c4c;
+	font-size: 20px;
+}
+
+.preloader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+	animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	background-color: #337ab7;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+	top: auto;
+	bottom: 0;
+	animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes preloader-bounce {
+	0%,
+	100% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
+
+.resultsList {
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+	max-width: 538px;
+	width: 100%;
+}
+
+.itemWrap {
+	display: flex;
+	gap: 20px;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.linkName {
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.repositoryCard {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+/*Список репозиториев конец*/
+
+.show {
+	display: block;
+}
